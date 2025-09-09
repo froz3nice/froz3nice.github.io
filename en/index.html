@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BraziusApps - App Development & static websites</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="/assets/styles/styles.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">BraziusApps</div>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <!-- <li><a href="#reviews">Reviews</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- Language selector -->
+        <li class="language-selector">
+          <select id="languageSwitch">
+            <option value="/en/">EN</option>
+            <option value="/lt/">LT</option>
+            <!-- Add more languages here -->
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="floating-element">
+      <i class="fab devicon-flutter-plain " style="font-size: 5rem;"></i>
+    </div>
+    <div class="floating-element">
+      <i class="fab devicon-kotlin-plain" style="font-size: 5rem;"></i>
+    </div>
+    <div class="floating-element">
+      <i class="fab fa-android" style="font-size: 5rem;"></i>
+    </div>
+    <div class="floating-element">
+      <i class="fab fa-apple" style="font-size: 5rem;"></i>
+    </div>
+
+    <div class="hero-content">
+      <h1>Mobile App Development</h1>
+      <p>I create high-quality mobile apps for Android and iOS, along with beautiful, responsive websites to showcase
+        your business and bring your ideas to life.</p>
+
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-rocket"></i>
+          Start Your Project
+        </a>
+        <a href="#services" class="btn btn-secondary">
+          <i class="fas fa-eye"></i>
+          View Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2 class="section-title">Mobile Development Services</h2>
+    <p class="section-subtitle">
+      I create apps for iOS, Android, TV, and smartwatches — from idea to launch.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>App Development</h3>
+        <p>
+          Cross-platform with Flutter or native Android with Kotlin — fast, reliable, and built for a great user
+          experience.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>MVP & Business Apps</h3>
+        <p>
+          From MVPs for startups to fully featured apps for businesses, I deliver solutions according to your buisiness
+          needs.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-tools"></i></div>
+        <h3>Support & Optimization</h3>
+        <p>
+          Ongoing updates, bug fixes, and performance improvements to keep your app smooth, secure, and ready for the
+          future.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2 class="section-title">Portfolio & Experience</h2>
+    <p class="section-subtitle">A showcase of mobile apps I’ve developed and my professional experience</p>
+
+    <div class="portfolio-grid">
+
+      <!-- TOP 3 Portfolio Items (always visible) -->
+
+      <!-- Portfolio Item 1 - Calitracker -->
+      <div class="portfolio-item">
+
+        <div class="portfolio-image">
+          <img src="/images/calitracker.webp" alt="Calitracker App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">Calitracker</h3>
+          <p class="portfolio-description">
+            Calisthenics workout tracker that helps users plan training sessions, monitor progress through
+            interactive graphs, revisit workout history, set custom reminders, and sync data seamlessly across devices.
+            App contains everything what an athlete needs to stay motivated and achieve their fitness goals.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Firebase</span>
+            <span class="portfolio-tag">Health & Fitness</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/us/app/calitracker-calisthenics-app/id6745608850"
+              class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.calisthenicsworkouttracker&hl=en"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 2 - Camino Lituano -->
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="/images/caminolituano.webp" alt="Camino Lituano App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">Camino Lituano</h3>
+          <p class="portfolio-description">
+            A travel companion app for the Camino Lituano route, showing your real-time location on the path with
+            sleeping spots, key landmarks, and local tips. Users can share their journey with friends, keep a diary,
+            upload photos,
+            and leave comments on places they visit.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Maps</span>
+            <span class="portfolio-tag">Travel</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/us/app/camino-lituano/id6467506077" class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.caminolituano&hl=en"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 - Card Game Sheethead -->
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="/images/sheethead.webp" alt="Card Game Sheethead App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile Game</div>
+          <h3 class="portfolio-title">Card Game Sheethead (10K+ Downloads)</h3>
+          <p class="portfolio-description">
+            Multiplayer and offline card game featuring bots, unlockable upgrades, custom card designs, multiple
+            table themes, and the ability to add and invite friends for competitive matches.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Multiplayer</span>
+            <span class="portfolio-tag">Card Game</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/ca/app/card-game-sheethead/id1568106963" class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.braziusproductions.cardgamekarma&hl=en"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Work Experience Item 1 -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/zealid.png" alt="Zeal ID Experience" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Work Experience</div>
+          <h3 class="portfolio-title">Android Developer - Zeal ID</h3>
+          <p class="portfolio-description">
+            Implemented various Android features, from security to design improvements. Worked with a large
+            codebase and collaborated with a cross-functional team to deliver high-quality solutions.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Android</span>
+            <span class="portfolio-tag">Kotlin</span>
+            <span class="portfolio-tag">Java</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://www.zealid.com/en/" class="portfolio-link primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Zeal ID
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Item 2 -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/obdeleven.webp" alt="OBDeleven Experience" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Work Experience</div>
+          <h3 class="portfolio-title">Mobile Developer - OBDeleven</h3>
+          <p class="portfolio-description">
+            Worked on a multi-modular codebase, implementing new features, integrating Bluetooth connectivity,
+            optimizing
+            performance, and ensuring clean code, refactoring, and thorough testing.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Android</span>
+            <span class="portfolio-tag">Kotlin</span>
+            <span class="portfolio-tag">Swift</span>
+            <span class="portfolio-tag">Kotlin Multiplatform</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://obdeleven.com/" class="portfolio-link primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> OBDeleven
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 4 - Calisthenics Tracker Website -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/calisthenicstracker_website.webp" alt="Calisthenics Tracker Website"
+            class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Website</div>
+          <h3 class="portfolio-title">Calisthenics Tracker Website</h3>
+          <p class="portfolio-description">
+            Presentation website for the Calisthenics Tracker app showcasing features, guides, and user onboarding.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">HTML5</span>
+            <span class="portfolio-tag">CSS3</span>
+            <span class="portfolio-tag">JavaScript</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://calisthenicstracker.com/" class="portfolio-link primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Live Site
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 5 - Champions League Predictor -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/champions.webp" alt="Champions League Predictor App" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">Champions League Predictor (100K+ Downloads)</h3>
+          <p class="portfolio-description">
+            Predict scores, team placement during group stage & playoffs, and share your predictions with friends.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Sports</span>
+            <span class="portfolio-tag">Prediction</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/ca/app/champions-football-predictor/id1586449455"
+              class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.opop.notecall.championsleaguepredictor&hl=en"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 6 - Streetlifter -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/streetlifter.webp" alt="Streetlifter App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">Streetlifter</h3>
+          <p class="portfolio-description">
+            Calculates One Rep Max for popular gym and calisthenics exercises like pull-ups, dips, and bench press. Also
+            lets users log workouts and track progress over time. Available on iOS, Android, and web.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Fitness</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/ca/app/streetlifter-calculate-1rm/id6747384909"
+              class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.streetliftingcalculator&hl=en"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+            <a href="https://calisthenicstracker.com/calculator" class="portfolio-link primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Live Site
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 7 - FlightIQ -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/flightiq.webp" alt="FlightIQ App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">FlightIQ (Startup MVP)</h3>
+          <p class="portfolio-description">
+            Flight search app that allows users to filter and select flights to their desired destinations. Made with
+            Kotlin and native Android.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Kotlin</span>
+            <span class="portfolio-tag">Android</span>
+            <span class="portfolio-tag">Travel</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Portfolio Item 8 - QuickJob -->
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/quickJob.webp" alt="QuickJob App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">QuickJob (App for local buisiness)</h3>
+          <p class="portfolio-description">
+            Job search app that allows workers to easily find jobs. Features three app modes for workers, employers,
+            and admins. Employers can post jobs and workers can select from available listings.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Flutter</span>
+            <span class="portfolio-tag">Job Search</span>
+            <span class="portfolio-tag">Productivity</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/goggins.webp" alt="Goggins Motivation Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">Goggins Motivation (10K+ downloads)</h3>
+          <p class="portfolio-description">
+            Motivational app that lets users listen to favorite quotes and share sounds.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Kotlin</span>
+            <span class="portfolio-tag">Motivation</span>
+          </div>
+          <div class="portfolio-links">
+
+            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item hidden-item">
+        <div class="portfolio-image">
+          <img src="/images/worldfootball.webp" alt="World Football Predictor App Screenshot" class="clickable-image" />
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-category">Mobile App</div>
+          <h3 class="portfolio-title">World Football Predictor (50K+ downloads)</h3>
+          <p class="portfolio-description">
+            An app that allows users to predict scores and team placements in major football tournament, share picks. It
+            also allows user to select championships in the past and relive the excitement of those tournaments.
+          </p>
+          <div class="portfolio-tags">
+            <span class="portfolio-tag">Kotlin</span>
+            <span class="portfolio-tag">Swift</span>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/us/app/world-football-champ-predictor/id1630644112"
+              class="portfolio-link primary">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
+              class="portfolio-link primary">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-more-container" style="display: flex; justify-content: center; padding-top: 2rem;">
+      <button id="show-more-btn" class="btn">Show More</button>
+    </div>
+
+
+  </section>
+
+
+
+  <!-- REVIEWS SECTION - ADD THIS AFTER YOUR PORTFOLIO SECTION -->
+  <!-- <section id="reviews" class="reviews">
+    <div class="reviews-container">
+      <h2 class="section-title">Client Reviews</h2>
+      <p class="section-subtitle">What clients say about working with BraziusApps</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Outstanding work on our mobile app! The cross-platform approach saved us time and budget while delivering a
+            polished product. Communication was excellent throughout the project, and the final result exceeded our
+            expectations."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">SM</div>
+            <div class="review-author-info">
+              <h4>Sarah Mitchell</h4>
+              <p>CEO, FitLife Solutions</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Tech Stack Section -->
+  <section id="tech" class="tech-stack">
+    <h2 class="section-title">Tech Stack</h2>
+    <p class="section-subtitle">Cutting-edge technologies for modern solutions</p>
+
+    <div class="tech-grid">
+
+      <!-- Tech stack section -->
+      <div class="tech-item">
+        <i class="devicon-flutter-plain colored"></i>
+        <div><span>Flutter</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-kotlin-plain colored"></i>
+        <div><span>Kotlin</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-swift-plain colored"></i>
+        <div><span>Swift</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-java-plain colored"></i>
+        <div><span>Java</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-dart-plain colored"></i>
+        <div><span>Dart</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-firebase-plain colored"></i>
+        <div><span>Firebase</span></div>
+      </div>
+      <div class="tech-item">
+        <i class="devicon-git-plain colored"></i>
+        <div><span>Git</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-card">
+      <h2 class="section-title">Let's bring your project idea to life</h2>
+      <p class="section-subtitle">Contact me for a consultation and project quote.
+      </p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>mb9611@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+37062141662</span>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/martynas-brazionis-153265118/" target="_blank"
+            style="color: inherit; text-decoration: none;">
+            <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> <span>LinkedIn Profile</span>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div style="margin-top: 2rem;">
+        <a href="mailto:mb9611@gmail.com" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 @BraziusApps. All rights reserved. Built with passion for cross-platform excellence.</p>
+  </footer>
+
+  <div id="fullscreenModal" class="fullscreen-modal">
+    <span id="closeModal" class="close-button">&times;</span>
+    <img id="modalImg" src="" alt="Full Image">
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+  <!-- Fullscreen Modal -->
+
+</body>
+
+</html>
