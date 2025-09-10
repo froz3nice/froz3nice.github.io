@@ -1,11 +1,11 @@
- const userLang = navigator.language || navigator.userLanguage;
-  if (!window.location.pathname.startsWith('/lt') && !window.location.pathname.startsWith('/en')) {
+const userLang = navigator.language || navigator.userLanguage;
+if (!window.location.pathname.startsWith('/lt') && !window.location.pathname.startsWith('/en')) {
     if (userLang.startsWith('lt')) {
-      window.location.replace('/lt/');
+        window.location.replace('/lt/');
     } else {
-      window.location.replace('/en/');
+        window.location.replace('/en/');
     }
-  }
+}
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -158,4 +158,49 @@ if (currentPath.startsWith('/lt/')) {
 languageSelect.addEventListener('change', () => {
     window.location.href = languageSelect.value;
 });
+
+// Language switcher functionality
+const languageSwitch = document.getElementById('languageSwitch');
+const languageDropdown = document.getElementById('languageDropdown');
+const currentLanguage = document.querySelector('.current-language');
+const languageOptions = document.querySelectorAll('.language-option');
+
+languageSwitch.addEventListener('click', (e) => {
+    e.stopPropagation();
+    languageSwitch.classList.toggle('active');
+    languageDropdown.classList.toggle('active');
+});
+
+// Handle language selection
+languageOptions.forEach(option => {
+    option.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        // Remove selected class from all options
+        languageOptions.forEach(opt => opt.classList.remove('selected'));
+
+        // Add selected class to clicked option
+        option.classList.add('selected');
+
+        // Update current language display
+        const langCode = option.dataset.lang.toUpperCase();
+        const langName = option.textContent.trim();
+
+        // Close dropdown
+        languageSwitch.classList.remove('active');
+        languageDropdown.classList.remove('active');
+
+        // Close mobile menu if open
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        console.log(languageSelect.value);
+        // Here you would typically redirect to the new language URL
+        window.location.href = option.dataset.url;
+        currentLanguage.textContent = langCode;
+
+        console.log(`Language switched to: ${langName} (${option.dataset.url})`);
+    });
+});
+
+
 
