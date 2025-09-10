@@ -1,6 +1,11 @@
-if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
-    window.location.href = "/lt/";
-}
+ const userLang = navigator.language || navigator.userLanguage;
+  if (!window.location.pathname.startsWith('/lt') && !window.location.pathname.startsWith('/en')) {
+    if (userLang.startsWith('lt')) {
+      window.location.replace('/lt/');
+    } else {
+      window.location.replace('/en/');
+    }
+  }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
