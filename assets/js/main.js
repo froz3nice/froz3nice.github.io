@@ -7,6 +7,19 @@ if (!window.location.pathname.startsWith('/lt') && !window.location.pathname.sta
     }
 }
 
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Close other items if open
+    faqItems.forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+    // Toggle current item
+    item.classList.toggle('active');
+  });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
