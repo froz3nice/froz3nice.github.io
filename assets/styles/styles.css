@@ -77,7 +77,7 @@
 }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     color: var(--color-white);
     background: var(--bg-gradient);
@@ -512,6 +512,18 @@ body {
     100% {
         transform: translateX(100%) translateY(100%) rotate(45deg);
     }
+}
+
+/* Scroll-based fade-in animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Mobile Responsive */
@@ -1268,97 +1280,249 @@ body {
 
 /* FAQ Section */
 .faq {
-  padding: 80px 20px;
-  background: var(--color-primary-dark);
-  font-family: 'Inter', sans-serif;
-  color: var(--color-white);
+    padding: 80px 20px;
+    background: var(--color-primary-dark);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-white);
 }
 
 .faq-container {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 10px;
-  color: var(--color-white);
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-white);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--color-light-gray);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-light-gray);
 }
 
 .faq-grid {
-  display: column ;
-  grid-template-columns: 1fr;
-  gap: 20px;
+    display: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .faq-item {
-  background: var(--service-card-bg);
-  border-radius: 12px;
-  padding: 20px 25px;
-  margin-bottom: 20px;
-  border: 1px solid var(--border-color-light);
-  transition: background 0.1s ease, box-shadow 0.1s ease;
-  cursor: pointer;
-  overflow: hidden;
+    background: var(--service-card-bg);
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color-light);
+    transition: background 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .faq-item:hover {
-  background: var(--service-card-hover-bg);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    background: var(--service-card-hover-bg);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .faq-question {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--color-primary-blue);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq-question::after {
-  content: '+';
-  font-size: 1.5rem;
-  color: var(--color-tertiary-accent);
-  transition: transform 0.3s ease;
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--color-tertiary-accent);
+    transition: transform 0.3s ease;
 }
 
 .faq-item.active .faq-question::after {
-  content: '-';
-  transform: rotate(180deg);
+    content: '-';
+    transform: rotate(180deg);
 }
 
 .faq-answer {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-light-gray);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding-top: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-light-gray);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding-top: 0;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 1000px; /* large enough to fit content */
-  padding-top: 15px;
+    max-height: 1000px;
+    /* large enough to fit content */
+    padding-top: 15px;
 }
 
 @media (min-width: 768px) {
-  .faq-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
+    .faq-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
+/* Pricing Section */
+.pricing {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(58, 134, 255, 0.07) 0%, rgba(111, 177, 252, 0.04) 100%);
+    border-radius: 32px;
+    max-width: 1200px;
+    margin: 4rem auto 0 auto;
+    box-shadow: 0 8px 32px rgba(58, 134, 255, 0.08);
+}
+
+.pricing .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--color-primary-blue), var(--color-secondary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing .section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-bottom: 3rem;
+}
+
+.pricing .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.pricing .service-card {
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(58, 134, 255, 0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: left;
+    border: 1.5px solid var(--portfolio-border-light);
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+}
+
+.pricing .service-card:hover {
+    box-shadow: 0 8px 32px rgba(58, 134, 255, 0.18);
+    transform: translateY(-8px) scale(1.03);
+}
+
+.pricing .service-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--color-white);
+}
+
+.pricing .service-card p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.pricing .service-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.2rem;
+}
+
+.pricing .service-card ul li {
+    position: relative;
+    padding-left: 1.6em;
+    margin-bottom: 0.7em;
+    color: var(--color-light-gray);
+    font-size: 1rem;
+}
+
+.pricing .service-card ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-blue);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.pricing .service-card strong {
+    color: var(--color-light-gray);
+    font-size: 1.1em;
+}
+
+.pricing .service-card:last-child {
+    border: 2px solid var(--color-light-gray);
+}
+
+.pricing .service-card:last-child h3 {
+    color: var(--color-light-gray);
+}
+
+.pricing .service-card .price {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-primary-blue);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.pricing .service-card .duration {
+    font-size: 1rem;
+    color: var(--color-secondary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.pricing .service-card .included {
+    font-size: 0.98rem;
+    color: var(--color-light-gray);
+    margin-bottom: 0.5rem;
+}
+
+
+.pricing .hourly-rate {
+    font-size: 1.15rem;
+    color: var(--color-primary-blue);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.pricing .note {
+    color: var(--color-light-gray);
+    font-size: 0.98rem;
+}
+
+@media (max-width: 600px) {
+    .pricing {
+        padding: 2.5rem 0.5rem;
+        border-radius: 0;
+    }
+
+    .pricing .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .pricing .service-card {
+        min-height: unset;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+}

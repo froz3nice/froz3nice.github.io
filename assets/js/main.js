@@ -10,14 +10,14 @@ if (!window.location.pathname.startsWith('/lt') && !window.location.pathname.sta
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
-  item.addEventListener('click', () => {
-    // Close other items if open
-    faqItems.forEach(i => {
-      if (i !== item) i.classList.remove('active');
+    item.addEventListener('click', () => {
+        // Close other items if open
+        faqItems.forEach(i => {
+            if (i !== item) i.classList.remove('active');
+        });
+        // Toggle current item
+        item.classList.toggle('active');
     });
-    // Toggle current item
-    item.classList.toggle('active');
-  });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -213,6 +213,20 @@ languageOptions.forEach(option => {
 
         console.log(`Language switched to: ${langName} (${option.dataset.url})`);
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fadeEls = document.querySelectorAll('.fade-in-up');
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    fadeEls.forEach(el => observer.observe(el));
 });
 
 
