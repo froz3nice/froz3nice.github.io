@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 
 <head>
   <meta charset="UTF-8">
@@ -7,40 +7,39 @@
   <meta name="author" content="BraziusApps">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical & hreflang -->
-  <link rel="canonical" href="/" />
-  <link rel="alternate" hreflang="lt" href="/" />
-  <link rel="alternate" hreflang="en" href="/en/" />
-
   <title>App kūrimas | Android, iOS, Web</title>
 
   <meta name="description"
     content="Profesionalios app kūrimo paslaugos. Kuriu Android, iOS programėles. Susisiekite dėl kainos ir terminų.">
 
   <meta name="keywords"
-    content="programėlių kūrimas, mobiliųjų programėlių kūrimas, Android programėlių kūrimas, iOS programėlių kūrimas, programėlių kūrėjas, programėlių kūrėjas, programėlių kūrimo kaina, programėlių kūrimo paslaugos, verslo programėlės, mobilios aplikacijos, BraziusApps, MVP kūrimas, lietuviškos programėlės, mobilių aplikacijų kūrimas, programėlių kūrimas Lietuva, programėlių kūrimas Kaunas, programėlių kūrimas Klaipėda, programėlių kūrimas Šiauliai, programėlių kūrimas Panevėžys">
-  <meta name="author" content="BraziusApps">
+    content="programėlių kūrimas, mobiliųjų programėlių kūrimas, Android programėlių kūrimas, iOS programėlių kūrimas, programėlių kūrėjas, programėlių kūrimo kaina, programėlių kūrimo paslaugos, verslo programėlės, mobilios aplikacijos, BraziusApps, MVP kūrimas, lietuviškos programėlės, mobilių aplikacijų kūrimas, programėlių kūrimas Lietuva, programėlių kūrimas Kaunas, programėlių kūrimas Klaipėda, programėlių kūrimas Šiauliai, programėlių kūrimas Panevėžys">
 
-  <!-- Kalba & kanoninis -->
-  <meta http-equiv="Content-Language" content="lt">
-  <link rel="canonical" href="/" />
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://braziusapps.lt/lt/" />
+  <link rel="alternate" hreflang="lt" href="https://braziusapps.lt/lt/" />
+  <link rel="alternate" hreflang="en" href="https://braziusapps.lt/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://braziusapps.lt/en/" />
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/" />
+  <meta property="og:site_name" content="BraziusApps">
+  <meta property="og:url" content="https://braziusapps.lt/lt/" />
   <meta property="og:title" content="BraziusApps - Mobilių app kūrimas">
   <meta property="og:description"
     content="Kuriame aukštos kokybės mobilias programėles ir verslo svetaines. Android, iOS, Flutter, Kotlin, Swift.">
-  <meta property="og:image" content="/assets/images/og-preview.jpg" />
+  <meta property="og:image" content="https://braziusapps.lt/assets/images/og-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="lt_LT">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="/" />
-  <meta property="og:title" content="BraziusApps — Mobilių progamėlių Kūrimas">
+  <meta name="twitter:title" content="BraziusApps - Mobilių programėlių kūrimas">
   <meta name="twitter:description"
     content="Kuriame mobilias programėles ir svetaines, kurios padeda auginti jūsų verslą. Android, iOS, Flutter, Kotlin, Swift.">
-  <meta name="twitter:image" content="/assets/images/og-preview.jpg" />
+  <meta name="twitter:image" content="https://braziusapps.lt/assets/images/og-preview.jpg" />
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
@@ -58,8 +57,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "BraziusApps",
-    "url": "/",
-    "logo": "/assets/icons/favicon.svg",
+    "url": "https://braziusapps.lt/",
+    "logo": "https://braziusapps.lt/assets/icons/web-app-manifest-512x512.png",
     "sameAs": [
       "https://www.linkedin.com/in/martynas-brazionis-153265118/"
     ],
@@ -67,30 +66,33 @@
   }
   </script>
   <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/styles.css">
 </head>
 
 <body>
+  <div class="scroll-progress"></div>
+
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">BraziusApps</div>
+      <a href="#home" class="logo">Brazius<span>Apps</span></a>
 
-      <!-- Hamburger for mobile -->
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Meniu">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#services">Paslaugos</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#reviews">Atsiliepimai</a></li>
+        <li><a href="#home">Pradžia</a></li>
+        <li><a href="#about">Apie</a></li>
+        <li><a href="#portfolio">Projektai</a></li>
+        <li><a href="#pricing">Kainos</a></li>
         <li><a href="#duk">DUK</a></li>
-
         <li><a href="#contact">Kontaktai</a></li>
 
-        <!-- Language selector -->
         <li class="language-selector">
           <div class="language-switch" id="languageSwitch">
             <svg class="globe-icon" viewBox="0 0 24 24">
@@ -115,489 +117,503 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero fade-in-up">
-    <div class="floating-element">
-      <i class="fab devicon-flutter-plain " style="font-size: 5rem;"></i>
-    </div>
-    <div class="floating-element">
-      <i class="fab devicon-kotlin-plain" style="font-size: 5rem;"></i>
-    </div>
-    <div class="floating-element">
-      <i class="fab fa-android" style="font-size: 5rem;"></i>
-    </div>
-    <div class="floating-element">
-      <i class="fab fa-apple" style="font-size: 5rem;"></i>
-    </div>
-
-    <div class="hero-content">
-      <h1>App kūrimas</h1>
-      <p><strong>Android, ios ir web.</strong></p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">
-          <i class="fas fa-rocket"></i>
-          Pradėkite projektą
-        </a>
-        <a href="#services" class="btn btn-secondary">
-          <i class="fas fa-eye"></i>
-          Žiūrėti paslaugas
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services fade-in-up">
-    <h2 class="section-title">Mobilių Programėlių Kūrimo Paslaugos</h2>
-    <p class="section-subtitle">
-      Taikau AI įrankius kartu su per patirtį įgytom žiniom kad programėlės būtų sukurtos greitai ir kokybiškai.
-    </p>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-        <h3>MVP programėlės</h3>
-        <p>
-          Nuo MVP startuoliams iki pilnai paruoštų programėlių verslui.
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-greeting">Sveiki<span class="dot"></span></p>
+        <p class="hero-name">Aš – Martynas</p>
+        <h1>Programėlių kūrėjas</h1>
+        <p class="hero-rotator">
+          Kuriu <span class="word" data-words='["Android programėles", "iOS programėles", "svetaines", "MVP startuoliams"]'></span><span class="caret"></span>
         </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Pradėkite projektą</a>
+          <a href="#portfolio" class="btn btn-outline">Mano darbai</a>
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-tools"></i></div>
-        <h3>Palaikymas ir optimizavimas</h3>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-ring"></div>
+        <div class="hero-ring-inner"></div>
+        <svg class="chevron chevron-left" viewBox="0 0 100 100">
+          <polygon points="85,12 12,50 85,88 85,72 42,50 85,28" />
+        </svg>
+        <svg class="chevron chevron-right" viewBox="0 0 100 100">
+          <polygon points="15,12 88,50 15,88 15,72 58,50 15,28" />
+        </svg>
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ph-title"></div>
+            <div class="ph-sub"></div>
+            <div class="ph-chart"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="ph-row"><i></i><b></b></div>
+            <div class="ph-row"><i></i><b></b></div>
+            <div class="ph-row"><i></i><b></b></div>
+            <div class="ph-btn"></div>
+          </div>
+        </div>
+        <div class="tech-badge b1"><i class="devicon-flutter-plain colored"></i></div>
+        <div class="tech-badge b2"><i class="fab fa-apple"></i></div>
+        <div class="tech-badge b3"><i class="devicon-kotlin-plain colored"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & services -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <ul id="services" class="services-timeline">
+        <li class="service-step" style="--d: 0s">
+          <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+          <div>
+            <h3>Android ir iOS programėlės</h3>
+            <p>Flutter arba natyvus Kotlin / Swift.</p>
+          </div>
+        </li>
+        <li class="service-step" style="--d: 0.35s">
+          <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+          <div>
+            <h3>MVP programėlės</h3>
+            <p>Nuo MVP startuoliams iki pilnai paruoštų programėlių verslui.</p>
+          </div>
+        </li>
+        <li class="service-step" style="--d: 0.7s">
+          <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+          <div>
+            <h3>Palaikymas ir optimizavimas</h3>
+            <p>Atlieku tiek app palaikymo darbus, tiek kuriu nuo nulio.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="about-text reveal reveal-right">
+        <h2 class="section-title">Apie mane</h2>
         <p>
-          Atlieku tiek app palaikymo darbus, tiek kuriu nuo nulio.
+          Esu Martynas – mobiliųjų programėlių kūrėjas. Dirbau OBDeleven ir Zeal ID komandose, o šalia to kuriu ir
+          leidžiu savo programėles, kurias parsisiuntė daugiau nei 170 tūkst. vartotojų. Dirbu su naujausiomis
+          technologijomis, todėl programėles sukuriu greitai ir kokybiškai.
         </p>
+        <div class="stats">
+          <div>
+            <div class="stat-value"><span data-count="9">0</span><span>+</span></div>
+            <div class="stat-label">Išleistų programėlių</div>
+          </div>
+          <div>
+            <div class="stat-value"><span data-count="170">0</span><span>K+</span></div>
+            <div class="stat-label">Parsisiuntimų</div>
+          </div>
+          <div>
+            <div class="stat-value"><span data-count="5.0">0</span><span>★</span></div>
+            <div class="stat-label">Klientų įvertinimas</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="pricing" class="pricing fade-in-up">
-    <h2 class="section-title">Kiek kainuoja programėlės kūrimas?</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Paprasta mobilioji programėlė (MVP)</h3>
-        <p><strong>Kaina:</strong> nuo 1 000 €</p>
-        <ul>
-          <li>Android ir iOS app</li>
-          <li>Pagrindinės funkcijos</li>
-          <li>Paparastas Dizainas</li>
-          <li>Testavimas</li>
-          <li>Paleidimas į Google Play arba App Store</li>
-        </ul>
-        <p><strong>Trukmė:</strong> 1–2 savaitės</p>
+  <!-- Projects -->
+  <section id="portfolio" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Projektai</h2>
+        <p class="section-subtitle">Android ir iOS app kūrimo patirtis – mano sukurtų programėlių sąrašas</p>
+        <div class="section-mark"></div>
       </div>
-      <div class="service-card">
-        <h3>Vidutinio sudėtingumo programėlė</h3>
-        <p><strong>Kaina:</strong> nuo 3 000 €</p>
-        <ul>
-          <li>Android ir iOS</li>
-          <li>Autentifikacija, duomenų bazė, serverio integracijos, daugiau nei 15 langų</li>
-          <li>Unikalus dizainas su komponentais</li>
-          <li>Testavimas</li>
-          <li>Paleidimas į Google Play arba App Store</li>
-        </ul>
-        <p><strong>Trukmė:</strong> 3-4 savaitės</p>
+
+      <div class="portfolio-grid" data-stagger>
+
+        <!-- Calitracker -->
+        <article class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="/images/calitracker.webp" alt="Calitracker programėlės ekrano vaizdas" loading="lazy"
+              class="clickable-image" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">Calitracker</h3>
+            <p class="portfolio-description">
+              Kalistenikos treniruočių sekimo programėlė, kuri leidžia naudotojams planuoti treniruotes, stebėti
+              progresą per interaktyvius grafikus, peržiūrėti treniruočių istoriją, nustatyti individualius priminimus
+              ir sinchronizuoti duomenis visuose įrenginiuose.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Flutter</span>
+              <span class="portfolio-tag">Firebase</span>
+              <span class="portfolio-tag">Sveikata ir sportas</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/us/app/calitracker-calisthenics-app/id6745608850" class="portfolio-link"
+                target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.calisthenicsworkouttracker&hl=en"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Camino Lituano -->
+        <article class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="/images/caminolituano.webp" alt="Camino Lituano programėlės ekrano vaizdas" loading="lazy"
+              class="clickable-image" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">Camino Lituano</h3>
+            <p class="portfolio-description">
+              Žygių maršruto programėlė Camino Lituano, rodanti vietovę realiu laiku su nakvynės vietomis, istorinėm
+              vietom ir vietinėm piligrimams reikalingom vietom. Vartotojai gali dalintis savo kelione su draugais, vesti
+              dienoraštį, įkelti nuotraukas ir palikti komentarus apie aplankytas vietas.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Flutter</span>
+              <span class="portfolio-tag">Geolocation</span>
+              <span class="portfolio-tag">Kelionės</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/us/app/camino-lituano/id6467506077" class="portfolio-link" target="_blank"
+                rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.caminolituano&hl=en"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sheethead -->
+        <article class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="/images/sheethead.webp" alt="Kortų žaidimo Sheethead programėlės ekrano vaizdas" loading="lazy"
+              class="clickable-image" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Kortų žaidimas</div>
+            <h3 class="portfolio-title">Card Game Sheethead (10K+ parsisiuntimų)</h3>
+            <p class="portfolio-description">
+              Multiplayer bei vieno žmogaus žaidimas prieš kompiuterį su atrakinamais patobulinimais, individualiais
+              kortų dizainais, keliomis stalo temomis ir galimybe pridėti bei pakviesti draugus žaidimui. Programėlės
+              sukurtos su Kotlin ir Swift.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Swift</span>
+              <span class="portfolio-tag">Multiplayer</span>
+              <span class="portfolio-tag">Kortų žaidimas</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/ca/app/card-game-sheethead/id1568106963" class="portfolio-link"
+                target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.braziusproductions.cardgamekarma&hl=en"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zeal ID -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image is-logo">
+            <img src="/images/zealid.png" alt="Zeal ID patirtis" class="clickable-image" loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Darbo patirtis</div>
+            <h3 class="portfolio-title">Android developer - Zeal ID</h3>
+            <p class="portfolio-description">
+              Įgyvendintos įvairios Android funkcijos, įskaitant saugumo ir dizaino patobulinimus. Darbas vyko su didelia
+              kodo baze, bendradarbiaujant su įvairiais komandos nariais, siekiant užtikrinti sklandų programėlės
+              veikimą.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Android</span>
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Java</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://www.zealid.com/en/" class="portfolio-link" target="_blank" rel="noopener"><i
+                  class="fas fa-arrow-up-right-from-square"></i> Zeal ID</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- OBDeleven -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image is-logo">
+            <img src="/images/obdeleven.webp" alt="OBDeleven patirtis" class="clickable-image" loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Darbo patirtis</div>
+            <h3 class="portfolio-title">Mobile Developer - OBDeleven</h3>
+            <p class="portfolio-description">
+              Darbas su didele kodo baze, švaraus kodo užtikrinimas, naujų funkcijų kūrimas bei programėlės patobulinimo
+              darbai. Komandinio darbo patirtis su kitais kūrėjais, dizaineriais ir produkto savininkais.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Android</span>
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Swift</span>
+              <span class="portfolio-tag">Kotlin Multiplatform</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://obdeleven.com/" class="portfolio-link" target="_blank" rel="noopener"><i
+                  class="fas fa-arrow-up-right-from-square"></i> OBDeleven</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Calisthenics Tracker website -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/calisthenicstracker_website.webp" alt="Calisthenics Tracker tinklalapis" loading="lazy"
+              class="clickable-image" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Web</div>
+            <h3 class="portfolio-title">Calisthenics Tracker tinklalapis</h3>
+            <p class="portfolio-description">Pristatymo tinklalapis Calisthenics Tracker programėlei.</p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">HTML5</span>
+              <span class="portfolio-tag">CSS3</span>
+              <span class="portfolio-tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://calisthenicstracker.com/" class="portfolio-link" target="_blank" rel="noopener"><i
+                  class="fas fa-arrow-up-right-from-square"></i> Nuoroda</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Champions League Predictor -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/champions.webp" alt="Čempionų lygos prognozių programėlė" class="clickable-image"
+              loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">Champions League Predictor (100K+ atsisiuntimų)</h3>
+            <p class="portfolio-description">
+              Rezultatų, komandų vietų grupės etape ir atkrintamosiose prognozavimas. Yra galimybė dalintis savo
+              prognozėmis su draugais.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Swift</span>
+              <span class="portfolio-tag">Sport</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/ca/app/champions-football-predictor/id1586449455" class="portfolio-link"
+                target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.opop.notecall.championsleaguepredictor&hl=en"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Streetlifter -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/streetlifter.webp" alt="Streetlifter programėlės ekrano vaizdas" class="clickable-image"
+              loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">Streetlifter</h3>
+            <p class="portfolio-description">
+              Apskaičiuoja maksimalų vieno kartojimo svorį populiariems sporto salės ir kalistenikos pratimams kaip
+              atsispaudimams, prisitraukimams ir štangos spaudimui. Taip pat leidžia naudotojams registruoti treniruotes
+              ir sekti progresą. iOS, Android ir Web.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Flutter</span>
+              <span class="portfolio-tag">Sportas</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/ca/app/streetlifter-calculate-1rm/id6747384909" class="portfolio-link"
+                target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.streetliftingcalculator&hl=en"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+              <a href="https://calisthenicstracker.com/calculator" class="portfolio-link" target="_blank"
+                rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Nuoroda</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- FlightIQ -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/flightiq.webp" alt="FlightIQ programėlės ekrano vaizdas" class="clickable-image"
+              loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">FlightIQ (Startuolio MVP)</h3>
+            <p class="portfolio-description">
+              Skrydžių paieškos programėlė, leidžianti naudotojams filtruoti ir rinktis skrydžius į norimas vietoves.
+              Sukurta su Kotlin ir natyviu Android.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Android</span>
+              <span class="portfolio-tag">Kelionės</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- QuickJob -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/quickJob.webp" alt="QuickJob programėlės ekrano vaizdas" class="clickable-image"
+              loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">QuickJob (Programėlė vietiniam verslui)</h3>
+            <p class="portfolio-description">
+              Darbo paieškos programėlė, leidžianti darbuotojams lengvai rasti darbus. Turi tris programėlės režimus
+              darbuotojams, darbdaviams ir administratoriams. Darbdaviai gali skelbti darbus, o darbuotojai gali rinktis
+              iš esamų skelbimų.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Flutter</span>
+              <span class="portfolio-tag">Darbo paieška</span>
+              <span class="portfolio-tag">Produktyvumas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Goggins -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/goggins.webp" alt="Goggins motyvacijos ekrano vaizdas" class="clickable-image"
+              loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">Goggins motyvacija (10K+ parsisiuntimų)</h3>
+            <p class="portfolio-description">
+              Motyvacinė programėlė, leidžianti naudotojams klausytis mėgstamų D. Goggins citatų ir dalintis garsais.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Motyvacija</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- World Football Predictor -->
+        <article class="portfolio-item hidden-item">
+          <div class="portfolio-image">
+            <img src="/images/worldfootball.webp" alt="Pasaulio futbolo prognozių programėlės ekrano vaizdas"
+              loading="lazy" class="clickable-image" />
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-category">Mobilioji programėlė</div>
+            <h3 class="portfolio-title">World Football Predictor (50K+ parsisiuntimų)</h3>
+            <p class="portfolio-description">
+              Programėlė, leidžianti naudotojams prognozuoti rezultatus ir komandų vietas didžiuosiuose pasaulio futbolo
+              čempionatuose bei dalintis spėjimais. Ji taip pat leidžia pasirinkti praeities čempionatus ir iš naujo
+              išgyventi praėjusius čempionatus.
+            </p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Kotlin</span>
+              <span class="portfolio-tag">Swift</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://apps.apple.com/us/app/world-football-champ-predictor/id1630644112" class="portfolio-link"
+                target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
+                class="portfolio-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="service-card">
-        <h3>Sudėtinga programėlė / Verslo sprendimas</h3>
-        <p><strong>Kaina:</strong> nuo 5 000 € - 50 000 €</p>
-        <ul>
-          <li>Android, iOS ir web</li>
-          <li>Backend kūrimas, mokėjimų integracijos, push notifications</li>
-          <li>Didelė vartotojų apkrova</li>
-          <li>Palaikymas ir atnaujinimai</li>
-          <li>Visas projekto valdymas</li>
-          <li>Landing page kūrimas</li>
-        </ul>
-        <p><strong>Trukmė:</strong> 2–6 mėnesiai</p>
+
+      <div class="show-more-container">
+        <button id="show-more-btn" class="btn btn-outline" data-more="Rodyti daugiau" data-less="Rodyti mažiau">
+          <span>Rodyti daugiau</span> <i class="fas fa-arrow-down"></i>
+        </button>
       </div>
-    </div>
-    <div style="margin-top:2rem;text-align:center;">
-      <p><strong>Valandinis įkainis:</strong> 30 €/val.</p>
-      <p>Visos kainos yra preliminarios ir priklauso nuo projekto apimties bei funkcionalumo.</p>
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio fade-in-up">
-    <h2 class="section-title">Android ir ios app kūrimo patirtis</h2>
-    <p class="section-subtitle">Mano sukurtų app sąrašas ir patirtis</p>
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Kiek kainuoja programėlės kūrimas?</h2>
+        <div class="section-mark"></div>
+      </div>
 
-    <div class="portfolio-grid">
-
-
-      <!-- Portfolio Item 1 - Calitracker -->
-      <div class="portfolio-item">
-        <div class="portfolio-image">
-          <img src="/images/calitracker.webp" alt="Calitracker programėlės ekrano vaizdas" loading="lazy"
-            class="clickable-image" />
+      <div class="pricing-grid" data-stagger>
+        <div class="price-card">
+          <h3>Paprasta mobilioji programėlė (MVP)</h3>
+          <div class="price-amount"><small>nuo</small>300 €</div>
+          <ul>
+            <li>Android ir iOS app</li>
+            <li>Pagrindinės funkcijos</li>
+            <li>Paprastas dizainas</li>
+            <li>Testavimas</li>
+            <li>Paleidimas į Google Play arba App Store</li>
+          </ul>
+          <p class="price-duration"><strong>Trukmė:</strong> 1–2 savaitės</p>
         </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">Calitracker</h3>
-          <p class="portfolio-description">
-            Kalistenikos treniruočių sekimo programėlė, kuri leidžia naudotojams planuoti treniruotes, stebėti progresą
-            per interaktyvius grafikus, peržiūrėti treniruočių istoriją, nustatyti individualius priminimus ir
-            sinchronizuoti duomenis visuose įrenginiuose.
-            Programėlėje yra viskas, ko reikia išlikti motyvuotam ir pasiekti savo tikslus.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Flutter</span>
-            <span class="portfolio-tag">Firebase</span>
-            <span class="portfolio-tag">Sveikata ir sportas</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/us/app/calitracker-calisthenics-app/id6745608850"
-              class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.calisthenicsworkouttracker&hl=en"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
+        <div class="price-card featured">
+          <h3>Vidutinio sudėtingumo programėlė</h3>
+          <div class="price-amount"><small>nuo</small>3 000 €</div>
+          <ul>
+            <li>Android ir iOS</li>
+            <li>Autentifikacija, duomenų bazė, serverio integracijos, daugiau nei 15 langų</li>
+            <li>Unikalus dizainas su komponentais</li>
+            <li>Testavimas</li>
+            <li>Paleidimas į Google Play arba App Store</li>
+          </ul>
+          <p class="price-duration"><strong>Trukmė:</strong> 3–4 savaitės</p>
+        </div>
+        <div class="price-card">
+          <h3>Sudėtinga programėlė / Verslo sprendimas</h3>
+          <div class="price-amount"><small>nuo</small>5 000 €<small>iki 50 000 €</small></div>
+          <ul>
+            <li>Android, iOS ir web</li>
+            <li>Backend kūrimas, mokėjimų integracijos, push notifications</li>
+            <li>Didelė vartotojų apkrova</li>
+            <li>Palaikymas ir atnaujinimai</li>
+            <li>Visas projekto valdymas</li>
+            <li>Landing page kūrimas</li>
+          </ul>
+          <p class="price-duration"><strong>Trukmė:</strong> 2–6 mėnesiai</p>
         </div>
       </div>
 
-      <!-- Portfolio Item 2 - Camino Lituano -->
-      <div class="portfolio-item">
-        <div class="portfolio-image">
-          <img src="/images/caminolituano.webp" alt="Camino Lituano programėlės ekrano vaizdas" loading="lazy"
-            class="clickable-image" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">Camino Lituano</h3>
-          <p class="portfolio-description">
-            Žygių maršruto programėlė Camino Lituano, rodanti vietovę realiu laiku su nakvynės
-            vietomis, istorinėm vietom ir vietinėm piligrimams reikalingom vietom. Vartotojai gali dalintis savo kelione
-            su
-            draugais, vesti dienoraštį, įkelti nuotraukas
-            ir palikti komentarus apie aplankytas vietas.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Flutter</span>
-            <span class="portfolio-tag">Geolocation</span>
-            <span class="portfolio-tag">Kelionės</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/us/app/camino-lituano/id6467506077" class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.caminolituano&hl=en"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Portfolio Item 3 - Card Game Sheethead -->
-      <div class="portfolio-item">
-        <div class="portfolio-image">
-          <img src="/images/sheethead.webp" alt="Kortų žaidimo Sheethead programėlės ekrano vaizdas" loading="lazy"
-            class="clickable-image" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Kortų žaidimas</div>
-          <h3 class="portfolio-title">Card Game Sheethead (10K+ parsisiuntimų)</h3>
-          <p class="portfolio-description">
-            Multiplayer bei vieno žmogaus žaidimas prieš kompiuterį su atrakinamais patobulinimais, individualiais kortų
-            dizainais, keliomis stalo temomis ir galimybe pridėti bei pakviesti draugus žaidimui. Programėlės sukurtos
-            su Kotlin ir Swift.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Swift</span>
-            <span class="portfolio-tag">Multiplayer</span>
-            <span class="portfolio-tag">Kortų žaidimas</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/ca/app/card-game-sheethead/id1568106963" class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.braziusproductions.cardgamekarma&hl=en"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Work Experience Item 1 -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/zealid.png" alt="Zeal ID patirtis" class="clickable-image" loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Darbo patirtis</div>
-          <h3 class="portfolio-title">Android developer - Zeal ID</h3>
-          <p class="portfolio-description">
-            Įgyvendintos įvairios Android funkcijos, įskaitant saugumo ir dizaino patobulinimus. Darbas vyko su didelia
-            kodo baze, bendradarbiaujant su įvairiais komandos nariais, siekiant užtikrinti sklandų programėlės veikimą.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Android</span>
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Java</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://www.zealid.com/en/" class="portfolio-link primary" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Zeal ID
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Work Experience Item 2 -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/obdeleven.webp" alt="OBDeleven patirtis" class="clickable-image" loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Darbo patirtis</div>
-          <h3 class="portfolio-title">Mobile Developer - OBDeleven</h3>
-          <p class="portfolio-description">
-            Darbas su didele kodo baze, švaraus kodo užtikrinimas, naujų funkcijų kūrimas
-            bei programėlės patobulinimo darbai. Komandinio darbo patirtis su kitais kūrėjais, dizaineriais ir
-            produkto savininkais.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Android</span>
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Swift</span>
-            <span class="portfolio-tag">Kotlin Multiplatform</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://obdeleven.com/" class="portfolio-link primary" target="_blank">
-              <i class="fas fa-external-link-alt"></i> OBDeleven
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Portfolio Item 4 - Calisthenics Tracker Website -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/calisthenicstracker_website.webp" alt="Calisthenics Tracker tinklalapis" loading="lazy"
-            class="clickable-image" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Web</div>
-          <h3 class="portfolio-title">Calisthenics Tracker tinklalapis</h3>
-          <p class="portfolio-description">
-            Pristatymo tinklalapis Calisthenics Tracker programėlei
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">HTML5</span>
-            <span class="portfolio-tag">CSS3</span>
-            <span class="portfolio-tag">JavaScript</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://calisthenicstracker.com/" class="portfolio-link primary" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Nuoroda
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Portfolio Item 5 - Champions League Predictor -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/champions.webp" alt="Čempionų lygos prognozių programėlė" class="clickable-image"
-            loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">Champions League Predictor (100K+ atsisiuntimų)</h3>
-          <p class="portfolio-description">
-            Rezultatų, komandų vietų grupės etape ir atkrintamosiose prognozavimas. Yra Galimybė dalitis savo
-            prognozėmis su
-            draugais.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Swift</span>
-            <span class="portfolio-tag">Sport</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/ca/app/champions-football-predictor/id1586449455"
-              class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.opop.notecall.championsleaguepredictor&hl=en"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Portfolio Item 6 - Streetlifter -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/streetlifter.webp" alt="Streetlifter programėlės ekrano vaizdas" class="clickable-image"
-            loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">Streetlifter</h3>
-          <p class="portfolio-description">
-            Apskaičiuoja maksimalų vieno kartojimo svorį populiariems sporto salės ir kalistenikos pratimams kaip
-            atsispaudimams, prisitraukimams ir štangos spaudimui. Taip pat leidžia naudotojams registruoti treniruotes
-            ir
-            sekti progresą. iOS, Android ir Web.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Flutter</span>
-            <span class="portfolio-tag">Sportas</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/ca/app/streetlifter-calculate-1rm/id6747384909"
-              class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.streetliftingcalculator&hl=en"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-            <a href="https://calisthenicstracker.com/calculator" class="portfolio-link primary" target="_blank">
-              <i class="fas fa-external-link-alt"></i> Nuoroda
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Portfolio Item 7 - FlightIQ -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/flightiq.webp" alt="FlightIQ programėlės ekrano vaizdas" class="clickable-image"
-            loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">FlightIQ (Startuolio MVP)</h3>
-          <p class="portfolio-description">
-            Skrydžių paieškos programėlė, leidžianti naudotojams filtruoti ir rinktis skrydžius į norimas vietoves.
-            Sukurta su Kotlin ir natyviu Android.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Android</span>
-            <span class="portfolio-tag">Kelionės</span>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Portfolio Item 8 - QuickJob -->
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/quickJob.webp" alt="QuickJob programėlės ekrano vaizdas" class="clickable-image"
-            loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">QuickJob (Programėlė vietiniam verslui)</h3>
-          <p class="portfolio-description">
-            Darbo paieškos programėlė, leidžianti darbuotojams lengvai rasti darbus. Turi tris programėlės režimus
-            darbuotojams, darbdaviams
-            ir administratoriams. Darbdaviai gali skelbti darbus, o darbuotojai gali rinktis iš esamų skelbimų.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Flutter</span>
-            <span class="portfolio-tag">Darbo paieška</span>
-            <span class="portfolio-tag">Produktyvumas</span>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/goggins.webp" alt="Goggins motyvacijos ekrano vaizdas" class="clickable-image"
-            loading="lazy" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">Goggins motyvacija (10K+ parsisiuntimų)</h3>
-          <p class="portfolio-description">
-            Motyvacinė programėlė, leidžianti naudotojams klausytis mėgstamų D. Goggins citatų ir dalintis garsais.
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Motyvacija</span>
-          </div>
-          <div class="portfolio-links">
-
-            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item hidden-item">
-        <div class="portfolio-image">
-          <img src="/images/worldfootball.webp" alt="Pasaulio futbolo prognozių programėlės ekrano vaizdas"
-            loading="lazy" class="clickable-image" />
-        </div>
-        <div class="portfolio-content">
-          <div class="portfolio-category">Mobilioji programėlė</div>
-          <h3 class="portfolio-title">World Football Predictor (50K+ parsisiuntimų)</h3>
-          <p class="portfolio-description">
-            Programėlė, leidžianti naudotojams prognozuoti rezultatus ir komandų vietas didžiuosiuose pasaulio futbolo
-            čempionatuose bei dalintis spėjimais. Ji taip pat leidžia naudotojui pasirinkti praeities čempionatus ir iš
-            naujo išgyventi praėjusisu čempionatus.
-            .
-          </p>
-          <div class="portfolio-tags">
-            <span class="portfolio-tag">Kotlin</span>
-            <span class="portfolio-tag">Swift</span>
-          </div>
-          <div class="portfolio-links">
-            <a href="https://apps.apple.com/us/app/world-football-champ-predictor/id1630644112"
-              class="portfolio-link primary">
-              <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.braziusProductions.gogginsmotivation"
-              class="portfolio-link primary">
-              <i class="fab fa-google-play"></i> Google Play
-            </a>
-          </div>
-        </div>
+      <div class="pricing-note reveal">
+        <p><strong>Valandinis įkainis:</strong> 30 €/val.</p>
+        <p>Visos kainos yra preliminarios ir priklauso nuo projekto apimties bei funkcionalumo.</p>
       </div>
     </div>
-
-    <div class="show-more-container" style="display: flex; justify-content: center; padding-top: 2rem;">
-      <button id="show-more-btn" class="btn">Rodyti daugiau</button>
-    </div>
-
   </section>
 
-  <section id="reviews" class="reviews fade-in-up">
-    <div class="reviews-container">
-      <h2 class="section-title">Klientų atsiliepimai</h2>
-      <p class="section-subtitle">Ką klientai sako apie darbą su BraziusApps</p>
+  <!-- Reviews -->
+  <section id="reviews" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Klientų atsiliepimai</h2>
+        <p class="section-subtitle">Ką klientai sako apie darbą su BraziusApps</p>
+        <div class="section-mark"></div>
+      </div>
 
-      <div class="reviews-grid">
-
+      <div class="reviews-grid" data-stagger>
         <div class="review-card">
           <div class="review-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
           <p class="review-text">
-            "Martynas puikiai prisidėjo prie komandos kuriant Android aplikaciją sveikatingumo srityje. Pagrinde dirbo
+            „Martynas puikiai prisidėjo prie komandos kuriant Android aplikaciją sveikatingumo srityje. Pagrinde dirbo
             prie nuotraukų galerijos, statistikos grafikų ir priminimų langų, dirbo su Firestore duomenų baze ir
             Firebase platforma. Martynas domisi rinkos naujovėmis ir taiko jas savo darbuose. Sėkmės jam kituose
-            projektuose."
+            projektuose.“
           </p>
           <div class="review-author">
             <div class="review-avatar">NB</div>
@@ -608,18 +624,12 @@
           </div>
         </div>
 
-        <!-- Review 3 (Robertas Petrikas) -->
         <div class="review-card">
           <div class="review-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
-          <p class="review-text">
-            "Darbas buvo atliktas laiku ir labai kokybiškai. Rekomenduoju ++++"
-          </p>
+          <p class="review-text">„Darbas buvo atliktas laiku ir labai kokybiškai. Rekomenduoju ++++“</p>
           <div class="review-author">
             <div class="review-avatar">RP</div>
             <div class="review-author-info">
@@ -628,68 +638,46 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Tech Stack Section -->
-  <section id="tech" class="tech-stack">
-    <h2 class="section-title">Mobilios Aplikacijos Kūrimo Technologijos</h2>
-    <p class="section-subtitle">Pažangiausios technologijos šiuolaikiniams sprendimams</p>
-
-    <div class="tech-grid">
-
-      <!-- Tech stack section -->
-      <div class="tech-item">
-        <i class="devicon-flutter-plain colored"></i>
-        <div><span>Flutter</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-kotlin-plain colored"></i>
-        <div><span>Kotlin</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-swift-plain colored"></i>
-        <div><span>Swift</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-java-plain colored"></i>
-        <div><span>Java</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-dart-plain colored"></i>
-        <div><span>Dart</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-firebase-plain colored"></i>
-        <div><span>Firebase</span></div>
-      </div>
-      <div class="tech-item">
-        <i class="devicon-git-plain colored"></i>
-        <div><span>Git</span></div>
+  <!-- FAQ -->
+  <section id="duk" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Dažniausiai užduodami klausimai</h2>
+        <p class="section-subtitle">Apie mobiliųjų programėlių kūrimą</p>
+        <div class="section-mark"></div>
       </div>
 
-    </div>
-  </section>
-
-  <section id="duk" class="faq">
-    <div class="faq-container">
-      <h2 class="section-title">Dažniausiai užduodami klausimai apie programėlių kūrimą</h2>
-      <div class="faq-grid">
+      <div class="faq-grid" data-stagger>
         <div class="faq-item">
-          <div class="faq-question">Kiek kainuoja mobiliųjų programėlių kūrimas?</div>
-          <div class="faq-answer">Programėlių kūrimo kaina priklauso nuo funkcionalumo, dizaino ir terminų. Susisiekite
-            dėl individualios kainos pasiūlymo.</div>
+          <h3 class="faq-question">Kiek kainuoja mobiliųjų programėlių kūrimas?</h3>
+          <div class="faq-answer">
+            <div>Programėlių kūrimo kaina priklauso nuo funkcionalumo, dizaino ir terminų. Susisiekite dėl individualios
+              kainos pasiūlymo.</div>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Per kiek laiko sukuriama programėlė?</div>
-          <div class="faq-answer">Paprastą MVP galima sukurti per 2–4 savaites. Sudėtingesni projektai gali užtrukti
-            ilgiau.</div>
+          <h3 class="faq-question">Per kiek laiko sukuriama programėlė?</h3>
+          <div class="faq-answer">
+            <div>Paprastą MVP galima sukurti per 1–2 savaites. Sudėtingesni projektai gali užtrukti ilgiau.</div>
+          </div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Ar kuriate tiek Android, tiek iOS programėles?</div>
-          <div class="faq-answer">Taip, kuriu tiek Android, tiek iOS programėles, taip pat web.</div>
+          <h3 class="faq-question">Ar kuriate tiek Android, tiek iOS programėles?</h3>
+          <div class="faq-answer">
+            <div>Taip, kuriu tiek Android, tiek iOS programėles, taip pat web.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Ar programėlei sukurti reikia didelės komandos?</h3>
+          <div class="faq-answer">
+            <div>Dažniausiai ne. Šiuolaikinės technologijos leidžia nedidelei patyrusiai komandai atlikti darbą,
+              kuriam anksčiau reikėjo kelis kartus daugiau žmonių. Plačiau – straipsnyje <a
+                href="/lt/kiek-zmoniu-reikia-programelei-sukurti/">„Kiek žmonių reikia programėlei sukurti?“</a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -713,7 +701,7 @@
       "name": "Kokia yra mobiliųjų programėlių kūrimo kaina?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mano standartinis valandinis įkainis yra 30 EUR/val. Mažesni projektai gali kainuoti nuo 1 000–2 000 €, o sudėtingesnės programėlės, su integracijomis ar backend sistema, gali kainuoti 5 000–10 000 € ir daugiau. Kaina priklauso nuo funkcionalumo ir darbų apimties."
+        "text": "Mano standartinis valandinis įkainis yra 30 EUR/val. Mažesni projektai kainuoja nuo 300 €, o sudėtingesnės programėlės, su integracijomis ar backend sistema, dažniausiai kainuoja 3 000–6 000 €. Kaina priklauso nuo funkcionalumo ir darbų apimties."
       }
     },
     {
@@ -721,7 +709,7 @@
       "name": "Kiek laiko užtrunka sukurti mobiliąją aplikaciją?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Paprastos aplikacijos sukūrimas užtrunka apie 1–2 mėnesius, o sudėtingesni projektai (su duomenų baze, mokėjimais, autentifikacija) gali trukti 3–6 mėnesius. Terminai visada priklauso nuo projekto dydžio."
+        "text": "Paprastos aplikacijos sukūrimas užtrunka apie 1–2 savaites, o sudėtingesni projektai (su duomenų baze, mokėjimais, autentifikacija) gali trukti 1–2 mėnesius. Terminai visada priklauso nuo projekto dydžio."
       }
     },
     {
@@ -747,56 +735,49 @@
         "@type": "Answer",
         "text": "Taip, teikiu ilgalaikį palaikymą: programėlės atnaujinimus, klaidų taisymą, naujų funkcijų kūrimą ir integracijas. Tai užtikrina, kad jūsų aplikacija išliks patogi ir saugi augant verslui."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Ar programėlei sukurti reikia didelės komandos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dažniausiai ne. Šiuolaikinės technologijos leidžia nedidelei patyrusiai komandai atlikti darbą, kuriam anksčiau reikėjo kelis kartus daugiau žmonių."
+      }
     }
   ]
 }
 </script>
 
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-card reveal">
+        <h2 class="section-title">Įgyvendinkime jūsų projekto idėją</h2>
+        <p class="section-subtitle">Susisiekite dėl nemokamos konsultacijos.</p>
 
-  <section id="contact" class="contact">
-    <div class="contact-card">
-      <h2 class="section-title">Įgyvendinkime jūsų projekto idėją</h2>
-      <p class="section-subtitle">Susisiekite dėl nemokamos konsultacijos.
-      </p>
-
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>mb9611@gmail.com</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <span>+37062141662</span>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.linkedin.com/in/martynas-brazionis-153265118/" target="_blank"
-            style="color: inherit; text-decoration: none;">
-            <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i>
-            <span>LinkedIn profilis</span>
-          </a>
+        <div class="contact-info">
+          <a class="contact-item" href="mailto:mb9611@gmail.com"><i class="fas fa-envelope"></i>mb9611@gmail.com</a>
+          <a class="contact-item" href="tel:+37062141662"><i class="fas fa-phone"></i>+37062141662</a>
+          <a class="contact-item" href="https://www.linkedin.com/in/martynas-brazionis-153265118/" target="_blank"
+            rel="noopener"><i class="fa-brands fa-linkedin"></i>LinkedIn profilis</a>
         </div>
 
-
-      </div>
-
-      <div style="margin-top: 2rem;">
-        <a href="mailto:mb9611@gmail.com" class="btn btn-primary">
-          <i class="fas fa-paper-plane"></i>
-          Susisiekite
-        </a>
+        <div class="contact-cta">
+          <a href="mailto:mb9611@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Susisiekite</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 BraziusApps. Visos teisės saugomos.</p>
+    <p>&copy; <span class="current-year">2026</span> BraziusApps. Visos teisės saugomos.</p>
   </footer>
-  <!-- Fullscreen Modal -->
+
   <div id="fullscreenModal" class="fullscreen-modal">
     <span class="close-button" id="closeModal">&times;</span>
-    <img id="modalImg" src="" alt="Fullscreen Image" />
+    <img id="modalImg" src="" alt="" />
   </div>
+
   <script src="/assets/js/main.js"></script>
 </body>
 

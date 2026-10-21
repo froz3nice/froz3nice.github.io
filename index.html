@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
-
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=lt/" />
+  <title>BraziusApps</title>
+  <link rel="canonical" href="https://braziusapps.lt/lt/" />
+  <link rel="alternate" hreflang="lt" href="https://braziusapps.lt/lt/" />
+  <link rel="alternate" hreflang="en" href="https://braziusapps.lt/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://braziusapps.lt/en/" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <script>
+    var lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+    window.location.replace(lang.indexOf("lt") === 0 ? "/lt/" : "/en/");
+  </script>
+  <meta http-equiv="refresh" content="0; url=/lt/" />
 </head>
 <body>
-  <script>
-    window.location.href = "lt/";
-  </script>
+  <a href="/lt/">Lietuvių</a> · <a href="/en/">English</a>
 </body>
 </html>
