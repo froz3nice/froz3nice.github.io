@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://braziusapps.lt/lt/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="lt" href="https://braziusapps.lt/lt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://braziusapps.lt/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://braziusapps.lt/en/" />
@@ -17,6 +17,16 @@
 
   <url>
     <loc>https://braziusapps.lt/lt/kiek-kainuoja-programele/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+
+  <url>
+    <loc>https://braziusapps.lt/lt/svetainiu-kurimas/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+
+  <url>
+    <loc>https://braziusapps.lt/lt/el-parduotuviu-kurimas/</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
 
