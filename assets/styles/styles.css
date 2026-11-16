@@ -10,7 +10,7 @@
     --line: rgba(255, 255, 255, 0.08);
     --text: #e9eef4;
     --muted: #93a1b3;
-    --faint: #5d6b7d;
+    --faint: #7f8ca0;
     --accent: #2dd4bf;
     --accent-2: #5eead4;
     --accent-ink: #04211e;
@@ -157,6 +157,9 @@ a {
 
 .hamburger {
     display: none;
+    background: none;
+    border: 0;
+    color: inherit;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -781,7 +784,7 @@ a {
     background: var(--accent-soft);
 }
 
-.service-step h3 {
+.service-step h2 {
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -1144,7 +1147,7 @@ a {
     font-size: 0.9rem;
 }
 
-.review-author-info h4 {
+.review-author-info h3 {
     font-size: 1rem;
     font-weight: 600;
 }

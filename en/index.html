@@ -84,11 +84,11 @@
     <div class="nav-container">
       <a href="#home" class="logo">Brazius<span>Apps</span></a>
 
-      <div class="hamburger" id="hamburger" aria-label="Menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
@@ -122,6 +122,7 @@
     </div>
   </nav>
 
+  <main id="main">
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="container hero-grid">
@@ -177,35 +178,35 @@
         <li class="service-step" style="--d: 0s">
           <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
           <div>
-            <h3>App Development</h3>
+            <h2>App Development</h2>
             <p>Cross-platform with Flutter or native Android with Kotlin.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.25s">
           <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
           <div>
-            <h3>MVP &amp; Business Apps</h3>
+            <h2>MVP &amp; Business Apps</h2>
             <p>From MVPs for startups to fully featured apps for businesses.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.5s">
           <div class="service-icon"><i class="fas fa-cart-shopping"></i></div>
           <div>
-            <h3>Websites &amp; E-shops</h3>
+            <h2>Websites &amp; E-shops</h2>
             <p>Fast websites and online stores with a custom design.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.75s">
           <div class="service-icon"><i class="fas fa-table-columns"></i></div>
           <div>
-            <h3>Internal Tools</h3>
+            <h2>Internal Tools</h2>
             <p>Order, booking, inventory or CRM tools for your team.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 1s">
           <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
           <div>
-            <h3>Support &amp; Optimization</h3>
+            <h2>Support &amp; Optimization</h2>
             <p>Updates, bug fixes and performance improvements.</p>
           </div>
         </li>
@@ -575,7 +576,7 @@
           <div class="review-author">
             <div class="review-avatar">NB</div>
             <div class="review-author-info">
-              <h4>Užupio Kalvos Association</h4>
+              <h3>Užupio Kalvos Association</h3>
               <p>Service: Android App Development (2025-05)</p>
             </div>
           </div>
@@ -590,7 +591,7 @@
           <div class="review-author">
             <div class="review-avatar">RP</div>
             <div class="review-author-info">
-              <h4>Robertas Petrikas</h4>
+              <h3>Robertas Petrikas</h3>
               <p>Service: Android/iOS App Development (2022-01)</p>
             </div>
           </div>
@@ -727,6 +728,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="footer">
     <p>&copy; <span class="current-year">2026</span> BraziusApps. All rights reserved.</p>

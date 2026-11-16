@@ -146,11 +146,11 @@
     <div class="nav-container">
       <a href="#home" class="logo">Brazius<span>Apps</span></a>
 
-      <div class="hamburger" id="hamburger" aria-label="Meniu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Meniu" aria-controls="nav-links" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Pradžia</a></li>
@@ -185,6 +185,7 @@
     </div>
   </nav>
 
+  <main id="main">
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="container hero-grid">
@@ -240,35 +241,35 @@
         <li class="service-step" style="--d: 0s">
           <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
           <div>
-            <h3>Android ir iOS programėlės</h3>
+            <h2>Android ir iOS programėlės</h2>
             <p>Flutter arba natyvus Kotlin / Swift.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.25s">
           <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
           <div>
-            <h3>MVP programėlės</h3>
+            <h2>MVP programėlės</h2>
             <p>Nuo MVP startuoliams iki pilnai paruoštų programėlių verslui.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.5s">
           <div class="service-icon"><i class="fas fa-cart-shopping"></i></div>
           <div>
-            <h3>Svetainės ir el. parduotuvės</h3>
+            <h2>Svetainės ir el. parduotuvės</h2>
             <p>Greitos svetainės ir el. parduotuvės su unikaliu dizainu.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 0.75s">
           <div class="service-icon"><i class="fas fa-table-columns"></i></div>
           <div>
-            <h3>Vidinės sistemos</h3>
+            <h2>Vidinės sistemos</h2>
             <p>Užsakymų, rezervacijų, sandėlio ar CRM įrankiai jūsų komandai.</p>
           </div>
         </li>
         <li class="service-step" style="--d: 1s">
           <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
           <div>
-            <h3>Palaikymas ir optimizavimas</h3>
+            <h2>Palaikymas ir optimizavimas</h2>
             <p>Atlieku tiek app palaikymo darbus, tiek kuriu nuo nulio.</p>
           </div>
         </li>
@@ -704,7 +705,7 @@
           <div class="review-author">
             <div class="review-avatar">NB</div>
             <div class="review-author-info">
-              <h4>Namo bendrija Užupio kalvos</h4>
+              <h3>Namo bendrija Užupio kalvos</h3>
               <p>Paslauga: Android aplikacijų kūrimas (2025-05)</p>
             </div>
           </div>
@@ -719,7 +720,7 @@
           <div class="review-author">
             <div class="review-avatar">RP</div>
             <div class="review-author-info">
-              <h4>Robertas Petrikas</h4>
+              <h3>Robertas Petrikas</h3>
               <p>Paslauga: Android/iOS aplikacijų kūrimas (2022-01)</p>
             </div>
           </div>
@@ -854,6 +855,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="footer">
     <p>&copy; <span class="current-year">2026</span> BraziusApps. Visos teisės saugomos.</p>
