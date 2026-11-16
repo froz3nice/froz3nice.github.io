@@ -1969,3 +1969,126 @@ a {
         height: 36px;
     }
 }
+
+/* Article tables, ordered lists, FAQ ------------------------------------- */
+.table-wrap {
+    margin: 28px 0;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.price-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.price-table th,
+.price-table td {
+    padding: 16px 18px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--line);
+    color: #c4cdd8;
+    line-height: 1.55;
+}
+
+.price-table thead th {
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.price-table tbody th {
+    color: var(--text);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.price-table tbody tr:last-child th,
+.price-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.price-table td:nth-child(3) {
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.price-table small {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.price-table sup a {
+    text-decoration: none;
+}
+
+.article ol:not(.sources ol) {
+    margin: 18px 0 0 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.article ol + p {
+    margin-top: 18px;
+}
+
+.article h3.article-q {
+    margin: 30px 0 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+@media (max-width: 640px) {
+    .table-wrap {
+        border: 0;
+        overflow: visible;
+    }
+
+    .price-table,
+    .price-table tbody,
+    .price-table tr,
+    .price-table th,
+    .price-table td {
+        display: block;
+        min-width: 0;
+    }
+
+    .price-table thead {
+        display: none;
+    }
+
+    .price-table tr {
+        margin-bottom: 14px;
+        padding: 18px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 6px 0;
+        border: 0;
+        white-space: normal;
+    }
+
+    .price-table tbody th {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }
+
+    .price-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--muted);
+    }
+}
